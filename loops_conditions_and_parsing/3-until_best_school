@@ -1,9 +1,8 @@
 #!/usr/bin/env bash
 # displays Best School 10 times using until loop.
 
-COUNTER=10
-until [ $COUNTER -lt 1 ]
-do
-    echo "Best School"
-    let COUNTER-=1
+counter=10 #initialize counter from 10
+until (($counter <= 0)); do
+	echo "Best school"
+	((counter--)) #decrement counter
 done
