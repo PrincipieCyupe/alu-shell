@@ -4,10 +4,9 @@
 counter=0  # Initialize counter from 0
 while (( counter < 10 )); do
     if (( counter < 9 )); then
-        echo "Best School"  # For the first 9 iterations
+        echo "Best School"  # Print "Best School" for the first 9 iterations
     elif (( counter == 9 )); then
-        echo "Best School"  # For the 9th iteration
-        echo "Hi"           # Print "Hi" on a new line
+        echo "Hi"           # Print "Hi" for the 10th iteration
     fi
     ((counter++))  # Increment counter by 1
 done
