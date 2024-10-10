@@ -4,7 +4,7 @@
 counter=0 #initialize counter from 0
 while (( $counter < 10)); do
 	if (( $counter < 9)); then
-		echo "Best school" # for the first 9 iterations
+		echo "Best School" # for the first 9 iterations
 		elif (( $counter == 9)); then
 			echo "Best School" # for the 9th iterations
 			echo "Hi" # print "Hi" as a new line
