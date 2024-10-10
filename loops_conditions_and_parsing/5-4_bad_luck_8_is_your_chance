@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+# Bash script that loops from 1 to 10
+
+count=0 # initialise from 0
+while (( count < 10 )); do
+if (( count < 3)); then
+echo "Best School" # for the first 3 iterations
+elif (( count == 3)); then
+echo "bad luck" # print "bad luck" on the 4th line
+elif (( count == 7)); then
+echo "good luck" # print "good luck" on the 8th line
+else 
+echo "Best School" # for the remaining iterations
+fi
+((count++))
+done
+
