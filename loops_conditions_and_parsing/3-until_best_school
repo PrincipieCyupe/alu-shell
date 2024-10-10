@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+#This is displaying "Best School" 10 time using until loop
+
+count=0 #initialize from 0
+until (($count >= 10));
+do
+echo "Best School"
+((count=count+1)) #no increment count by 1
+done
