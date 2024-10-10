@@ -1,16 +1,30 @@
 #!/usr/bin/env bash
-#Bash script that displays numbers from 1 to 20.
+# displays numbers from 1 to 20.
 
-count=1 # initialise from 1
-while (( count <= 20)); do
-echo $count #print the numbers from 1 to 20
-case $count in
-4)
-echo "bad luck from china" ;; # print the message on a new line
-9)
-echo "bad luck from japan" ;; # print the message on a new line
-17)
-echo "bad luck from italy" ;; # print the message on a new line
-esac
-((count++)) # increment count by 1
+COUNTER=1
+while [ $COUNTER -lt 21 ]
+do
+    case $COUNTER in
+
+        4)
+	    echo $COUNTER
+	    echo "bad luck from China"
+	    ;;
+	
+	9)
+	    echo $COUNTER
+	    echo "bad luck from Japan"
+	    ;;
+	
+	17)
+	    echo $COUNTER
+	    echo "bad luck from Italy"
+	    ;;
+
+	*)
+	    echo $COUNTER
+	    ;;
+    esac
+
+    let COUNTER+=1
 done
